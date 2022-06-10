@@ -1,17 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// react dom  
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+// React is imported in order to write Jsx.
+// In react we write code in jsx .
+// jsx stands for Javasccript xml . (xml => extensible markup language => treat as HTML)
+// jsx => javacsrcipt + Html.
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <App />
+
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
+
+
+// component => meaningful part of readable code .

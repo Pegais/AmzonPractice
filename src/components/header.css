@@ -1,0 +1,84 @@
+
+.header{
+    height: 65px;
+    width: 100%;
+background-color: black;
+display: flex;
+}
+.img-container{
+    /* background-color: blue; */
+    height: 100%;
+    width: 120px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img{
+    height: 70%;
+    width: 79%;
+}
+
+.content-container{
+    /* background-color: red; */
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hello{
+    /* background-color: lightcoral; */
+    width: 160px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: small;
+    color: white;
+}
+.Address{
+    width: 160px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: flex-start;
+    font-weight:600;
+    color: white;
+}
+.search-parent{
+    /* background-color: lightblue; */
+    height: 100%;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.search-parent input{
+    height: 75%;
+    width: 90%;
+    border-radius: 8px;
+    border: none;
+}
+.cart {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 60px;
+}
+.box{
+    position: absolute;
+    /* background-color: yellow; */
+    font-weight: bold;
+    color:red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    left: 40px;
+
+}

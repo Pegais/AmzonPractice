@@ -1,0 +1,20 @@
+.subheader{
+    background-color: lightblue;
+    height: 40px;
+    display: flex;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.subheader div{
+    margin-left: 20px;
+    font-size: large;
+    font-weight: 900;
+    height: 30px;
+    width: 60px;
+    /* background-color: lightcoral; */
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    border-radius: 10px;
+    border: 1px solid black;
+}
