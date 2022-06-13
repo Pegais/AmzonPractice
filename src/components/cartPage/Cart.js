@@ -1,32 +1,47 @@
-import React from 'react'
-import "../card.css"
-
+import React,{useState} from 'react'
+// import "../card.css"
+import './cart.css'
 export default function Cart({ cart }) {
+
+
+
   return (
     <>
-      <div className='parent'>
+
       {
         cart.cart.length == 0 ?
-          <div>there is no product added in cart</div>
+          <div className='cart-container'>
+            no product in cart.
+          </div>
           :
           cart.cart.map((ele) => {
             return (
-              <div className='card-container' key={ele.id}>
-                <div className='image-container'>
+              <div className='cart-container'>
+                <div className='container'>
                   <img src={ele.image} />
                 </div>
-                <div className='details'>
-                  <div className='title'>{ele.title}</div>
-                  <div className='price'>{ele.price}</div>
-                  <div className='quantity'>{ele.quantity}</div>
-                  {/* we have to put a arrow funciton in order to call a function directly in incline onclick*/}
-                  <button onClick={() => cart.addToCart(ele)}>Add to Cart</button>
+                <div className='product-detail'>
+                  <div>Price</div>
+                  <div> Rs.{ele.price}</div>
+                </div>
+                <div className='quantity-container'>
+                  <div>Quantity</div>
+                  <button onClick={()=>cart.addToCart(ele) }>+</button>
+                  <div>Pcs {ele.quantity}</div>
+                  <button onClick={()=>cart.deleteToCart(ele)}>-</button>
+                </div>
+                <div className='delete'>
+                  <button onClick={()=>cart.removeCart(ele)}>Delete from Cart</button>
+                </div>
+                <div className='total'>
+                  <div>Total Price</div>
+                  <div>{ele.price * ele.quantity} </div>
                 </div>
               </div>
             )
           })
       }
-      </div>
+
     </>
   )
 }

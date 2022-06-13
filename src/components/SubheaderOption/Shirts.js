@@ -6,10 +6,10 @@ import React from 'react'
 import data from "../../Object.js"
 import ShirtComp from './ShirtComp.js'
 
-export default function Shirts() {
+export default function Shirts({addToCart}) {
   console.log(Object)
   let shirtData = data.filter(ele=>ele.type=="shirt")
   return (
-    <ShirtComp data={ shirtData}/>
+    <ShirtComp data={{shirtData,addToCart}}/>
   )
 }

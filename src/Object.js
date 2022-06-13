@@ -4,7 +4,7 @@ let data = [
         image: "/images/amazon.png",
         title: "Amazon Logo",
         type:"shirt",
-        price: "Rs 200",
+        price: 200,
         totalquantity: 10,
     },
     {
@@ -12,7 +12,7 @@ let data = [
         image: "/images/logo192.png",
         title: "React-1 Logo",
         type:"pant",
-        price: "Rs 500",
+        price: 500,
         totalquantity: 20,
 
     },
@@ -21,7 +21,7 @@ let data = [
         image: "/images/logo512.png",
         title: "React-2 Logo",
         type:"pant",
-        price: "Rs 1000",
+        price: 1000,
         totalquantity: 12,
 
     },
@@ -30,7 +30,7 @@ let data = [
         image: "/images/logo512.png",
         title: "React-2 Logo",
         type:"pant",
-        price: "Rs 1000",
+        price: 1000,
         totalquantity: 3,
 
     },
@@ -39,7 +39,7 @@ let data = [
         image: "/images/amazon.png",
         title: "React-2 Logo",
         type:"shirt",
-        price: "Rs 1000",
+        price: 120,
         totalquantity: 5,
 
     },
@@ -48,7 +48,7 @@ let data = [
         image: "/images/logo512.png",
         title: "React-2 Logo",
         type:"pant",
-        price: "Rs 1000",
+        price: 600,
         totalquantity: 6,
 
     },

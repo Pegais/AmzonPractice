@@ -8,7 +8,7 @@ export default function PantComp({ data }) {
           <div className='parent'>
             {
 
-                data.map((ele) => {
+                data.pantData.map((ele) => {
                     return (
                         <div className='card-container'>
                             <div className='image-container'>
@@ -18,7 +18,7 @@ export default function PantComp({ data }) {
                                 <div className='title'>{ele.title}</div>
                                 <div className='price'>{ ele.price}</div>
                                 <div className='quantity'>{ ele.quantity}</div>
-                                <button>Add to Cart</button>
+                                <button onClick={()=>data.addToCart(ele)}>Add to Cart</button>
                             </div>
                         </div>
                     )
